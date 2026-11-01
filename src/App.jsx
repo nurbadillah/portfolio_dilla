@@ -66,7 +66,7 @@ function App() {
                 style={{ objectFit: 'cover' }}
               />
 
-              <h3>Nurbadillah</h3>
+              <h3>DILLA CANTIK</h3>
 
               <p>Software Engineer</p>
 
