@@ -19,7 +19,7 @@ const academicProjects = [
   {
     number: '02',
     category: 'AUGMENTED REALITY',
-    title: 'Agro Aqua Education',
+    title: 'Agro-Aqua Education',
     description:
       'Developed an interactive augmented reality educational application focused on fish processing, featuring learning materials and 3D visualization of fish processing equipment.',
     tags: ['Unity', 'Vuforia', 'C#', 'Augmented Reality'],
@@ -27,11 +27,11 @@ const academicProjects = [
   },
   {
     number: '03',
-    category: 'MOBILE DEVELOPMENT',
+    category: 'MOBILE & WEB DEVELOPMENT',
     title: 'Maizedotco',
     description:
-      'Built a mobile application for symptom-based corn disease diagnosis, including symptom selection and diagnostic result screens.',
-    tags: ['Java', 'Android'],
+      'Built a mobile application and website for symptom-based corn disease diagnosis, including symptom selection and diagnostic result screens.',
+    tags: ['Java', 'Android', 'PHP', 'MySQL', 'Laravel',],
     images: ['maizedotco.png'],
   },
   {
@@ -46,10 +46,10 @@ const academicProjects = [
   {
     number: '05',
     category: 'TECHNICAL DOCUMENTATION',
-    title: 'Dentalink',
+    title: 'Dentalink Guidebook',
     description:
       'Developed a comprehensive user guide for Dentalink, a dental clinic management website previously built as a group project, documenting its features, functionalities, and step-by-step usage instructions.',
-    tags: ['User Manual', 'Technical Documentation'],
+    tags: ['User Guidebook', 'Technical Documentation', 'Microsoft Word', 'Canva'],
     images: ['dentalink.jpg'],
     externalLink:
       'https://drive.google.com/file/d/1MRVrovG9LTrxzpoi6qDTJBavmZMsnmmf/view?usp=sharing',

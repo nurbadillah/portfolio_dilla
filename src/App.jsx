@@ -80,7 +80,7 @@ function App() {
               </div>
 
               <div className="profile-card-footer">
-                <span>IPB University 2026</span>
+                <span>IPB University</span>
                 <span>✦</span>
               </div>
             </div>
