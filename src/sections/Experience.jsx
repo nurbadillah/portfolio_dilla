@@ -96,7 +96,7 @@ function Experience() {
 
             <div className="experience-period">
               <span>Aug – Dec 2025</span>
-              <span>Jakarta, Indonesia</span>
+              <span>📍Jakarta, Indonesia</span>
             </div>
           </div>
 

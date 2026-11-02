@@ -13,6 +13,8 @@ function Skills() {
         'CSS',
         'PHP',
         'JavaScript',
+        'React.js',
+        'Vite',
         'Bootstrap',
         'Java',
         'C#',
@@ -48,7 +50,7 @@ function Skills() {
       icon: '🛠️',
       title: 'Other Tools & Technologies',
       description: 'Additional tools and technologies I work with',
-      skills: ['GitHub', 'VS Code', 'Canva', 'Capcut', 'Notion', 'Microsoft Office'],
+      skills: ['GitHub', 'VS Code', 'Node.js', 'Canva', 'Capcut', 'Notion', 'Microsoft Office'],
     }
   ]
 
