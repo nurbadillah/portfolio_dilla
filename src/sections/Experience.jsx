@@ -1,3 +1,4 @@
+
 import { useState, useCallback } from 'react'
 import ImageModal from '../components/ImageModal'
 
@@ -7,7 +8,6 @@ function Experience() {
   const closeImageModal = useCallback(() => {
     setSelectedImage(null)
   }, [])
-
 
   const projects = [
     {
@@ -23,7 +23,7 @@ function Experience() {
       number: '02',
       title: 'Office Inventory Recording App',
       image: '/images/projects/assets-app.png',
-      imageAlt: '',
+      imageAlt: 'Office Inventory Recording App documentation',
       description:
         'Developed a mobile application for digital office inventory recording to support internal inventory management processes and improve the organization of inventory information.',
       technologies: ['Flutter', '.NET API', 'SQL Server'],
@@ -32,7 +32,7 @@ function Experience() {
       number: '03',
       title: 'Data Visualization with Tableau',
       image: '/images/projects/tableau.png',
-      imageAlt: '',
+      imageAlt: 'Tableau data visualization documentation',
       description:
         'Explored and visualized datasets to identify patterns and present key findings through an interactive Tableau dashboard.',
       technologies: ['Tableau', 'CSV'],
@@ -41,10 +41,10 @@ function Experience() {
       number: '04',
       title: 'Business Intelligence Dashboard with Power BI',
       image: '/images/projects/power-bi.png',
-      imageAlt: '',
+      imageAlt: 'Power BI dashboard documentation',
       description:
         'Developed data visualizations and dashboard layouts to summarize key metrics and make information easier to interpret.',
-      technologies: ['Power BI', 'MySQL', 'SQL Server','CSV'],
+      technologies: ['Power BI', 'MySQL', 'SQL Server', 'CSV'],
     },
   ]
 
@@ -63,6 +63,7 @@ function Experience() {
         alt={selectedImage?.alt}
         onClose={closeImageModal}
       />
+
       <div className="section-heading">
         <span className="section-label">
           MY PROFESSIONAL JOURNEY
@@ -80,24 +81,26 @@ function Experience() {
 
       <div className="experience-container">
         <article className="experience-card">
-          {/* EXPERIENCE HEADER */}
+
+          {/* EXPERIENCE TOP */}
           <div className="experience-header">
-            <div className="experience-company">
-              <span className="experience-label">
-                INTERNSHIP
-              </span>
-
-              <h3>PT Suzuki Finance Indonesia</h3>
-
-              <p className="experience-position">
-                Software Developer Intern
-              </p>
-            </div>
+            <span className="experience-label">
+              INTERNSHIP
+            </span>
 
             <div className="experience-period">
               <span>Aug – Dec 2025</span>
-              <span>📍Jakarta, Indonesia</span>
+              <span>📍 Jakarta, Indonesia</span>
             </div>
+          </div>
+
+          {/* COMPANY INFORMATION */}
+          <div className="experience-company">
+            <h3>PT Suzuki Finance Indonesia</h3>
+
+            <p className="experience-position">
+              Software Developer Intern
+            </p>
           </div>
 
           <div className="experience-divider" />
@@ -126,7 +129,6 @@ function Experience() {
                   {project.number}
                 </div>
 
-                {/* PROJECT DOCUMENTATION */}
                 {project.image && (
                   <button
                     type="button"
@@ -141,13 +143,12 @@ function Experience() {
                   >
                     <img
                       src={project.image}
-                      alt={`${project.title} documentation`}
+                      alt={project.imageAlt}
                       loading="lazy"
                     />
                   </button>
                 )}
 
-                {/* PROJECT DETAILS */}
                 <div className="experience-project-content">
                   <h5>{project.title}</h5>
 
@@ -164,6 +165,7 @@ function Experience() {
               </div>
             ))}
           </div>
+
         </article>
       </div>
     </section>
