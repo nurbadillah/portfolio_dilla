@@ -10,7 +10,7 @@ function Navbar() {
         <a href="#experience">Experience</a>
         <a href="#certifications">Certifications</a>
         <a href="#publications">Publications</a>
-        <a href="#organization">Organization</a>
+        <a href="#organization">Organizations</a>
       </div>
 
       <a href="#contact" className="nav-button">

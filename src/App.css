@@ -833,3 +833,366 @@ main { width: 100%; overflow: clip; }
     font-size: 17px;
   }
 }
+
+
+
+/* ================================
+   ORGANIZATION SECTION
+================================ */
+
+.organization-section {
+  padding: 80px 24px;
+  background: #f7f9ff;
+  scroll-margin-top: 100px;
+}
+
+.organization-section .section-heading {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.organization-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.organization-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e5eafa;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(38, 55, 105, 0.025);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.organization-card:hover {
+  transform: translateY(-4px);
+  border-color: #cbd5ff;
+  box-shadow: 0 14px 32px rgba(38, 55, 105, 0.07);
+}
+
+
+
+.organization-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 17px;
+}
+
+.organization-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.organization-period {
+  color: #8996b3;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.organization-location {
+  color: #8996b3;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.organization-name {
+  color: #596fc5;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .organization-card-top {
+    gap: 8px;
+  }
+
+  .organization-meta {
+    gap: 5px;
+  }
+
+  .organization-period,
+  .organization-location {
+    font-size: 10px;
+  }
+}
+
+.organization-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.organization-period {
+  color: #8996b3;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.organization-location {
+  color: #8996b3;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.organization-name {
+  color: #596fc5;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .organization-card-top {
+    gap: 8px;
+  }
+
+  .organization-meta {
+    gap: 5px;
+  }
+
+  .organization-period,
+  .organization-location {
+    font-size: 10px;
+  }
+}
+
+
+.organization-tag {
+  color: #667eea;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.organization-period {
+  color: #8996b3;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.organization-card h3 {
+  color: #23345d;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.organization-name {
+  color: #596fc5;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.organization-description {
+  padding-left: 20px;
+  margin: 0;
+  color: #7987a9;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.organization-description li {
+  padding-left: 3px;
+  margin-bottom: 7px;
+}
+
+.organization-achievement {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  padding: 13px 15px;
+  background: #fff8e9;
+  color: #a77724;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.organization-achievement span {
+  font-size: 17px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .organization-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .organization-section {
+    padding: 60px 16px;
+  }
+
+  .organization-card {
+    padding: 22px;
+  }
+
+  .organization-card h3 {
+    font-size: 17px;
+  }
+
+  .organization-description {
+    font-size: 13px;
+  }
+
+  .organization-card-top {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+/* =================================
+   COMPACT PUBLICATIONS & ORGANIZATIONS
+   ================================= */
+
+/* SECTION SPACING */
+
+.publications-section,
+.organization-section {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+/* SECTION HEADING */
+
+.publications-section .section-heading,
+.organization-section .section-heading {
+  margin-bottom: 35px;
+}
+
+.publications-section .section-heading h2,
+.organization-section .section-heading h2 {
+  font-size: clamp(34px, 4vw, 44px);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.publications-section .section-heading p,
+.organization-section .section-heading p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* PUBLICATIONS CARDS */
+
+.publications-section .publication-item {
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.publications-section .publication-top {
+  margin-bottom: 16px;
+}
+
+.publications-section .publication-item h3 {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.publications-section .publication-journal {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.publications-section .publication-role {
+  font-size: 12px;
+  margin-bottom: 17px;
+}
+
+.publications-section .publication-view-link {
+  padding: 10px 14px;
+  font-size: 12px;
+}
+
+/* ORGANIZATION CARDS */
+
+.organization-grid {
+  gap: 18px;
+}
+
+.organization-card {
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.organization-card-top {
+  margin-bottom: 17px;
+}
+
+.organization-card h3 {
+  font-size: 17px;
+  line-height: 1.45;
+  margin-bottom: 9px;
+}
+
+.organization-name {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.organization-description {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.organization-description li {
+  margin-bottom: 5px;
+}
+
+.organization-achievement {
+  margin-top: 16px;
+  padding: 11px 13px;
+  font-size: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .publications-section,
+  .organization-section {
+    padding: 50px 16px;
+  }
+
+  .publications-section .section-heading h2,
+  .organization-section .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .publications-section .publication-item,
+  .organization-card {
+    padding: 21px;
+  }
+}
