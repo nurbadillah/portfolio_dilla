@@ -1,3 +1,4 @@
+
 function Organization() {
   const organizations = [
     {
@@ -21,23 +22,30 @@ function Organization() {
   return (
     <section className="organization-section" id="organization">
       <div className="section-heading">
-        <span className="section-label">BEYOND THE CLASSROOM</span>
+        <span className="section-label">
+          BEYOND THE CLASSROOM
+        </span>
 
         <h2>
-          Organization <span>& Publications.</span>
+          Organizational <span>Experience.</span>
         </h2>
 
         <p>
-          Leadership, collaboration, and academic contributions
-          throughout my educational journey.
+          Leadership, collaboration, and active involvement
+          in student organizations throughout my educational journey.
         </p>
       </div>
 
       <div className="organization-grid">
         {organizations.map((item) => (
-          <article className="organization-card" key={item.organization}>
+          <article
+            className="organization-card"
+            key={item.organization}
+          >
             <div className="organization-card-top">
-              <span className="organization-tag">ORGANIZATION</span>
+              <span className="organization-tag">
+                ORGANIZATION
+              </span>
 
               {item.period && (
                 <span className="organization-period">
@@ -48,7 +56,9 @@ function Organization() {
 
             <h3>{item.role}</h3>
 
-            <p className="organization-name">{item.organization}</p>
+            <p className="organization-name">
+              {item.organization}
+            </p>
 
             <p className="organization-description">
               {item.description}
@@ -62,26 +72,6 @@ function Organization() {
             )}
           </article>
         ))}
-      </div>
-
-      <div className="publication-card">
-        <div className="publication-icon">✦</div>
-
-        <div className="publication-content">
-          <span className="section-label">ACADEMIC CONTRIBUTIONS</span>
-
-          <h3>Scientific Publications</h3>
-
-          <p>
-            Co-authored three published journal articles, contributing
-            to academic research and scientific writing.
-          </p>
-
-          <div className="publication-count">
-            <strong>03</strong>
-            <span>Published Journal Articles</span>
-          </div>
-        </div>
       </div>
     </section>
   )

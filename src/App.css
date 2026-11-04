@@ -698,3 +698,138 @@ main { width: 100%; overflow: clip; }
     max-height: 100%;
   }
 }
+
+
+/* ================================
+   PUBLICATIONS SECTION
+================================ */
+
+.publications-section {
+  padding: 80px 24px;
+  background: #ffffff;
+  scroll-margin-top: 100px;
+}
+
+.publications-section .section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* PUBLICATION GRID */
+
+.publications-grid {
+  align-items: stretch;
+}
+
+.publication-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* TOP LABEL */
+
+.publication-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.publication-category {
+  color: #667eea;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.publication-index {
+  padding: 7px 12px;
+  background: #f0f2ff;
+  color: #596fc5;
+  border: 1px solid #dfe5ff;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* YEAR */
+
+.publication-year {
+  display: block;
+  color: #8996b3;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+
+.publication-item h3 {
+  color: #23345d;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* JOURNAL */
+
+.publication-journal {
+  color: #667eea;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* AUTHOR ROLE */
+
+.publication-role {
+  color: #8996b3;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+/* VIEW PUBLICATION BUTTON */
+
+.publication-view-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin-top: auto;
+  padding: 11px 17px;
+  border: 1px solid #dfe5ff;
+  background: #f0f2ff;
+  color: #596fc5;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+.publication-view-link:hover {
+  background: #667eea;
+  border-color: #667eea;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .publications-section {
+    padding: 60px 16px;
+  }
+
+  .publications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-item h3 {
+    font-size: 17px;
+  }
+}

@@ -1,3 +1,4 @@
+
 import './App.css'
 
 import Navbar from './components/Navbar'
@@ -5,6 +6,7 @@ import Skills from './sections/Skills'
 import Education from './sections/Education'
 import Experience from './sections/Experience'
 import Certifications from './sections/Certifications'
+import Publications from './sections/Publications'
 import Organization from './sections/Organization'
 import Contact from './sections/Contact'
 
@@ -39,13 +41,13 @@ function App() {
               lie in software development, particularly mobile application
               development, backend integration, and database management.
             </p>
+
             <p className="hero-description">
               I also have experience in data analysis and visualization
               using Python, pandas, Tableau, Power BI, and Microsoft Excel,
               alongside foundational skills in web development, SQL,
               and UI/UX design using Figma.
             </p>
-
           </div>
 
           {/* PROFILE CARD */}
@@ -104,22 +106,23 @@ function App() {
         </div>
       </section>
 
-      <div className="section-heading">
-          <span className="section-label">GET TO KNOW</span>
+      {/* ABOUT / INTRODUCTION */}
+      <div className="section-heading" id="about">
+        <span className="section-label">GET TO KNOW</span>
 
-          <h2>
-            More About <span>Me</span>
-          </h2>
+        <h2>
+          More About <span>Me</span>
+        </h2>
 
-          <p>
-            A brief introduction to my background and technical expertise.
-          </p>
-        </div>
+        <p>
+          A brief introduction to my background and technical expertise.
+        </p>
+      </div>
 
       {/* TECHNICAL SKILLS */}
       <Skills />
 
-      {/* EDUCATION AND ACADEMIC PROJECT */}
+      {/* EDUCATION */}
       <Education />
 
       {/* WORK EXPERIENCE AND INTERNSHIP PROJECTS */}
@@ -128,7 +131,10 @@ function App() {
       {/* CERTIFICATIONS AND TRAINING */}
       <Certifications />
 
-      {/* ORGANIZATION AND PUBLICATIONS */}
+      {/* ACADEMIC PUBLICATIONS */}
+      <Publications />
+
+      {/* ORGANIZATIONAL EXPERIENCE */}
       <Organization />
 
       {/* CONTACT AND FOOTER */}
